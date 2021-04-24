@@ -68,9 +68,9 @@ create table product_third_category
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
 
 6.规格表  
-规格模板字段描述了共享规格约束和私有规格约束，例如[{'group':'主芯片',params:[{'key':'核数', 'global':true, 'options':[4,8,16,32]}]]
+规格模板字段描述了共享规格约束和私有规格约束，例如[{'group':'主芯片',params:[{'key':'核数', 'global':true, 'options':[4,8,16,32]}]]  
 create table product_spec  
-(
+(  
    &nbsp;&nbsp;&nbsp;&nbsp;category_id          int not null default 0 comment '归属三级分类ID',  
    &nbsp;&nbsp;&nbsp;&nbsp;spec_template        varchar(2000) not null default '' comment '规格模板，json格式',  
    &nbsp;&nbsp;&nbsp;&nbsp;create_time          datetime not null default CURRENT_TIMESTAMP comment '创建时间',  
